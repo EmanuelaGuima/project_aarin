@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "cypress": "cypress open",
-    "cy:open": "cypress open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "e2e": "cypress run --env allure=true",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
+    "test:allure": "npm run e2e && npm run report:allure"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.41.0",
     "cypress": "^14.3.1"
   }
 }
