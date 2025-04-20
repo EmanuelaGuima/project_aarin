@@ -2,7 +2,6 @@ describe("GET users Reqres.in", () => {
   let expectedData;
 
   before(() => {
-    // Carrega os dados da fixture antes de rodar os testes
     cy.fixture("responseGetUsers").then((data) => {
       expectedData = data;
     });
@@ -14,4 +13,14 @@ describe("GET users Reqres.in", () => {
       expect(response.body.support).to.deep.equal(expectedData.support); // Validação dos dados de support
     });
   });
+  it("Deve retornar 404 ao buscar um usuário que não existe", () => {
+    cy.request({
+      method: "GET",
+      url: "https://reqres.in/api/users/465", 
+      failOnStatusCode: false, 
+    }).then((response) => {
+      expect(response.status).to.eq(404);
+      expect(response.body).to.be.empty; 
+    });
+});
 });

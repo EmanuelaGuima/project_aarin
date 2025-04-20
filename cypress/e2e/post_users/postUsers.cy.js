@@ -22,4 +22,18 @@ describe("POST users Reqres.in", () => {
       expect(response.body).to.have.property("createdAt");
     });
   });
+  it('Deve retornar erro 400 para body inválido', () => {
+    cy.request({
+      method: 'POST',
+      url: 'https://reqres.in/api/users',
+      failOnStatusCode: false, 
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: "null"
+    }).then((response) => {
+      expect(response.status).to.eq(400); 
+      expect(response.body).to.include("Bad Request"); 
+    });
+});
 });
