@@ -28,6 +28,7 @@
 │   │   └── getUsers.cy.js
 │   │   └── postUsers.cy.js
 │   └── allure-results/
+│   └── fixtures/
 ├── cypress.config.js
 ├── package.json
 └── README.md
