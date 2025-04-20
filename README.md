@@ -1,37 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Projeto de Automação com Cypress</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-    code {
-      background-color: #eee;
-      padding: 2px 4px;
-      border-radius: 3px;
-    }
-    pre {
-      background-color: #eee;
-      padding: 10px;
-      overflow-x: auto;
-      border-radius: 5px;
-    }
-    ul {
-      margin-top: 0;
-    }
-  </style>
-</head>
+<title>Projeto de Automação com Cypress</title>
 <body>
 
   <h1>🧪 Projeto de Automação de Testes com Cypress</h1>
