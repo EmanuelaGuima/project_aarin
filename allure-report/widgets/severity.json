@@ -1,0 +1,1 @@
+[{"uid":"c7f21894af9e51e4","name":"Requisição do POST Users","time":{"start":1745168655938,"stop":1745168656371,"duration":433},"status":"passed","severity":"normal"},{"uid":"c1acc3491b0329e2","name":"Requisição e validação do GET Users","time":{"start":1745168653914,"stop":1745168654034,"duration":120},"status":"passed","severity":"normal"}]
