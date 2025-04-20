@@ -1,7 +1,4 @@
-<title>Projeto de Automação com Cypress</title>
-<body>
-
-  <h1>🧪 Projeto de Automação de Testes com Cypress</h1>
+<h1>🧪 Projeto de Automação de Testes com Cypress</h1>
 
   <p>Este projeto foi desenvolvido como parte de uma <strong>prova técnica para uma vaga Sênior</strong>, com foco em testes automatizados utilizando o <strong>Cypress</strong>, realizando chamadas a dois endpoints (<code>POST</code> e <code>GET</code>) e geração de <strong>relatórios com Allure Reports</strong>.</p>
 
